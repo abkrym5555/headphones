@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Varela&display=swap");
+
+@theme {
+  --color-primary: #aa6d6b;
+  --color-brandDark: #151616;
+  --font-Poppins: "Poppins", sans-serif;
+  --font-varela: "Varela", sans-serif;
+}
