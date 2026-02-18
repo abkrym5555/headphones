@@ -31,7 +31,7 @@ const NabarMenue = [
 function Navbar() {
   return (
     <>
-      <div className="bg-brandDark py-4 text-white">
+      <div className="bg-brandDark font-varela py-4 text-white">
         <nav className="container flex items-center justify-between">
           <div>
             <a href="#" className="text-xl font-bold uppercase">
@@ -53,11 +53,13 @@ function Navbar() {
                   </a>
                 </li>
               ))}
-              <SlEarphones />
+              <button className="ps-14 text-lg">
+                <SlEarphones />
+              </button>
             </ul>
           </div>
-          <div>
-            <MdMenu />
+          <div className="md:hidden">
+            <MdMenu className="text-4xl" />
           </div>
         </nav>
       </div>
