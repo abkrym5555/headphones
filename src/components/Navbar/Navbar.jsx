@@ -1,7 +1,8 @@
 import React from "react";
 import { SlEarphones } from "react-icons/sl";
 import { MdMenu } from "react-icons/md";
-import { MouseFollower, UpdateFollower } from "react-mouse-follower";
+import { UpdateFollower } from "react-mouse-follower";
+import { motion } from "motion/react";
 const NabarMenue = [
   {
     id: 1,
@@ -33,7 +34,12 @@ function Navbar() {
   return (
     <>
       <div className="bg-brandDark font-varela py-4 text-white">
-        <nav className="container flex items-center justify-between">
+        <motion.nav
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.5 }}
+          className="container flex items-center justify-between"
+        >
           <div>
             <a href="#" className="text-xl font-bold uppercase">
               playing /{" "}
@@ -82,7 +88,7 @@ function Navbar() {
           <div className="md:hidden">
             <MdMenu className="text-4xl" />
           </div>
-        </nav>
+        </motion.nav>
       </div>
     </>
   );
