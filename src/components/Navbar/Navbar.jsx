@@ -1,6 +1,7 @@
 import React from "react";
 import { SlEarphones } from "react-icons/sl";
 import { MdMenu } from "react-icons/md";
+import { MouseFollower, UpdateFollower } from "react-mouse-follower";
 const NabarMenue = [
   {
     id: 1,
@@ -45,17 +46,37 @@ function Navbar() {
             <ul className="flex items-center gap-4">
               {NabarMenue.map((nv) => (
                 <li key={nv.id}>
-                  <a
-                    href={`${nv.link}`}
-                    className="inline-block px-3 py-2 text-sm uppercase"
+                  <UpdateFollower
+                    mouseOptions={{
+                      backgroundColor: "white",
+                      zIndex: 2,
+                      followSpeed: 1.5,
+                      scale: 5,
+                      mixBlendMode: "difference",
+                    }}
                   >
-                    {nv.title}
-                  </a>
+                    <a
+                      href={`${nv.link}`}
+                      className="inline-block px-3 py-2 text-sm uppercase"
+                    >
+                      {nv.title}
+                    </a>
+                  </UpdateFollower>
                 </li>
               ))}
-              <button className="ps-14 text-lg">
-                <SlEarphones />
-              </button>
+              <UpdateFollower
+                mouseOptions={{
+                  backgroundColor: "white",
+                  zIndex: 2,
+                  followSpeed: 1.5,
+                  scale: 5,
+                  mixBlendMode: "difference",
+                }}
+              >
+                <button className="ps-14 text-lg">
+                  <SlEarphones />
+                </button>
+              </UpdateFollower>
             </ul>
           </div>
           <div className="md:hidden">
