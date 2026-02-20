@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import { UpdateFollower } from "react-mouse-follower";
+import Hero from "./components/Hero/Hero";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         }}
       >
         <Navbar />
+        <Hero />
       </UpdateFollower>
     </main>
   );
