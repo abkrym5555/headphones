@@ -2,6 +2,7 @@ import { UpdateFollower } from "react-mouse-follower";
 import Icon1 from "../../assets/icons/obj1.png";
 import Icon2 from "../../assets/icons/obj2.png";
 import Icon3 from "../../assets/icons/obj3.png";
+import { motion } from "motion/react";
 
 const ServData = [
   {
@@ -26,11 +27,23 @@ const ServData = [
     icon: Icon3,
   },
 ];
+
+export const fedup = (d) => ({
+  hidden: { opacity: 0, y: 100 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.5, delay: d } },
+});
 function Servies() {
   return (
     <section className="font-Poppins bg-gray-100 py-8">
       <div className="container py-14">
-        <h1 className="pb-10 text-center text-3xl font-bold">Services</h1>
+        <motion.h1
+          variants={fedup(0.2)}
+          initial="hidden"
+          whileInView="show"
+          className="pb-10 text-center text-3xl font-bold"
+        >
+          Services
+        </motion.h1>
       </div>
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
         {ServData.map((serv) => (
@@ -48,13 +61,18 @@ function Servies() {
               ),
             }}
           >
-            <div className="mx-auto flex max-w-75 flex-col items-center justify-center rounded-xl bg-white p-5 shadow-lg">
+            <motion.div
+              variants={fedup(serv.delay)}
+              initial="hidden"
+              whileInView="show"
+              className="mx-auto flex max-w-75 flex-col items-center justify-center rounded-xl bg-white p-5 shadow-lg"
+            >
               <img className="mb-4 w-25" src={serv.icon} alt={serv.title}></img>
               <div className="space-y-2 text-center">
                 <h1 className="text-2xl font-bold">{serv.title}</h1>
                 <p className="text-center text-sm text-black/75">{serv.dec}</p>
               </div>
-            </div>
+            </motion.div>
           </UpdateFollower>
         ))}
       </div>
