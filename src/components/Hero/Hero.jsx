@@ -2,7 +2,6 @@ import { useState } from "react";
 import Headphone1 from "../../assets/headphone.png";
 import Headphone2 from "../../assets/headphone2.png";
 import Headphone3 from "../../assets/headphone3.png";
-import Headphone4 from "../../assets/headphone4.png";
 import { FaWhatsapp } from "react-icons/fa";
 import { AnimatePresence, easeInOut } from "motion/react";
 import { motion } from "motion/react";
