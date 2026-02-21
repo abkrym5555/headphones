@@ -73,8 +73,8 @@ function Hero() {
     setActiveDatat(data);
   };
   return (
-    <section className="bg-brandDark font-varela text-white">
-      <div className="container grid min-h-175 grid-cols-1 md:grid-cols-2">
+    <section className="bg-brandDark font-varela overflow-hidden text-white">
+      <div className="container grid min-h-177.5 grid-cols-1 md:grid-cols-2">
         <div className="flex flex-col justify-center py-4 md:py-0 xl:max-w-125">
           <div className="space-y-5 text-center md:text-left">
             <AnimatePresence mode="wait">
