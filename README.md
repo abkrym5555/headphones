@@ -1,16 +1,55 @@
-# React + Vite
+# Landing page for over view Headphones product
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+this project to practice and learn how work with framer motion and mouse follower.
 
-Currently, two official plugins are available:
+## Table of contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-## React Compiler
+## Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### The challenge
 
-## Expanding the ESLint configuration
+Users should be able to:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- View the optimal layout for each of the website's pages depending on their device's screen size
+- See the motion and mouse follower.
+
+### Links
+
+- Solution URL: [Add solution URL here](https://github.com/abkrym5555/headphones)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+
+## My process
+
+### Built with
+
+- [React](https://reactjs.org/) - JS library
+- tailwind css for style
+- Mobile-first workflow
+
+### What I learned
+
+how can i use the library farmer motion and mouse follower for react js.
+
+### Useful resources
+
+- [motion](https://motion.dev/) - This helped me to make motions.
+- [rect mouse follower ](https://www.npmjs.com/package/react-mouse-follower) - to make mouse follower.
+
+## Author
+
+- Linkedin - [mohamed-abdalkreim](https://www.linkedin.com/in/mohamed-abdalkreim-8b42bb2ab/)
+- Twitter - [@MAbdalkreim](https://x.com/MAbdalkreim)
+
+## Acknowledgments
+
+if there any error or edit just concat with me 😃.
