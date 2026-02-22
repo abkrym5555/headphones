@@ -25,8 +25,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://headphonestcj.netlify.app/)
-- Live Site URL: (https://your-live-site-url.com)
+- Live Site URL: (https://headphonestcj.netlify.app/)
 
 ## My process
 
